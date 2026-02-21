@@ -1,33 +1,27 @@
-export type Lang = 'pt-BR' | 'en-US' | 'cs-CZ';
+export type Lang = 'pt-BR' | 'en-US' | 'de-DE';
 
 export const translations = {
   'pt-BR': {
     nav: { profile: 'Perfil', portfolio: 'Portfólio' },
     hero: {
-      role: 'Full Stack Developer | React + ASP.NET | Eng. Produção UFSC',
-      tags: ['React', 'ASP.NET Core', 'PostgreSQL', 'Inglês C1'],
+      role: 'Analista de Compras | Eng. Produção UFSC | MITx',
+      tags: ['Strategic Sourcing', 'Power BI & Excel', 'Gestão de Fornecedores', 'Inglês C1'],
     },
     sections: {
       about: {
         title: 'Sobre Mim',
-        p1: 'Estudante de <strong>Engenharia de Produção Mecânica (UFSC)</strong> em transição para desenvolvimento de software.',
-        p2: 'Foco em resolver problemas complexos de negócios com arquitetura limpa e código performático.',
+        p1: 'Estudante de <strong>Engenharia de Produção Mecânica (UFSC)</strong> com MicroMasters em Supply Chain Management pelo MIT.',
+        p2: 'Profissional de Procurement com experiência prática em RFI/RFQ/RFP, ciclo Procure-to-Pay e análise de dados (Power BI/Excel) para otimização de custos e decisões estratégicas.',
       },
       skills: { title: 'Habilidades Técnicas' },
       exp: { 
         title: 'Trajetória Profissional',
         items: [
           {
-            role: 'Estudante Full-time',
-            company: 'Desenvolvimento Full Stack',
-            date: 'Jan 2026 - Presente',
-            desc: 'Foco intensivo em React (Frontend) e ASP.NET Core (Backend).'
-          },
-          {
-            role: 'Consultor Supply Chain',
-            company: 'Hennemann Consulting',
+            role: 'Consultor de Procurement',
+            company: 'Hennemann Supply Chain Consulting',
             date: 'Mai 2023 - Jun 2025',
-            desc: 'Análise de dados, negociação estratégica e otimização de processos de compras.'
+            desc: 'Condução de processos de RFI/RFQ/RFP, gestão de pedidos via ERP (P2P), análises de TCO e criação de dashboards em Power BI/Excel para monitoramento de KPIs.'
           }
         ]
       },
@@ -40,30 +34,25 @@ export const translations = {
             period: '2020 - 2026 (Em andamento)'
           },
           {
-            inst: 'Educative.io & Coursera',
-            course: 'ASP.NET Backend & Meta Frontend',
-            period: '2026 - Presente'
-          },
-          {
             inst: 'MITx MicroMasters',
             course: 'Supply Chain Management',
             period: '2023 - 2024'
           }
         ]
       },
-       footer: {
-      madeWith: 'Desenvolvido com',
-      by: 'por Guilherme do Prado.'
-    },
+      footer: {
+        madeWith: 'Desenvolvido com',
+        by: 'por Guilherme do Prado.'
+      },
       portfolio: {
-        title: 'Portfólio',
-        subtitle: 'Projetos focados em arquitetura limpa e regras de negócio complexas.',
+        title: 'Portfólio de Procurement & Dados',
+        subtitle: 'Projetos focados em inteligência de compras, análise de custos e visualização de dados.',
         projects: {
-          heatsphere: {
-            desc: 'Plataforma para note-taking e ferramentas auxiliares no aprendizado de transmissão de calor.'
+          spendAnalysis: {
+            desc: 'Dashboard interativo em Power BI demonstrando Análise de Spend, Curva ABC de fornecedores e monitoramento de OTIF e Lead Time.'
           },
-          valueprisma: {
-            desc: 'Sistema de gerenciamento de finanças pessoais com dashboards interativos para insights e otimização de gastos.'
+          costOptimization: {
+            desc: 'Modelagem de dados em Excel Avançado e Python (Pandas) para simulação de cenários de TCO (Total Cost of Ownership) e savings.'
           }
         }
       }
@@ -72,30 +61,24 @@ export const translations = {
   'en-US': {
     nav: { profile: 'Profile', portfolio: 'Portfolio' },
     hero: {
-      role: 'Full Stack Developer | React + ASP.NET | Production Eng. UFSC',
-      tags: ['React', 'ASP.NET Core', 'PostgreSQL', 'English C1'],
+      role: 'Procurement Analyst | Production Eng. UFSC | MITx',
+      tags: ['Strategic Sourcing', 'Power BI & Excel', 'Supplier Management', 'English C1'],
     },
     sections: {
       about: {
         title: 'About Me',
-        p1: '<strong>Mechanical Production Engineering student (UFSC)</strong> transitioning to software development.',
-        p2: 'Focused on solving complex business problems with clean architecture and high-performance code.',
+        p1: '<strong>Mechanical Production Engineering student (UFSC)</strong> with a MicroMasters in Supply Chain Management from MIT.',
+        p2: 'Procurement professional with hands-on experience in RFI/RFQ/RFP, Procure-to-Pay cycles, and data analysis (Power BI/Excel) for cost optimization and strategic decision-making.',
       },
       skills: { title: 'Technical Skills' },
       exp: { 
         title: 'Professional Path',
         items: [
           {
-            role: 'Full-time Student',
-            company: 'Full Stack Development',
-            date: 'Jan 2026 - Present',
-            desc: 'Intensive focus on React (Frontend) and ASP.NET Core (Backend).'
-          },
-          {
-            role: 'Supply Chain Consultant',
-            company: 'Hennemann Consulting',
+            role: 'Procurement Consultant',
+            company: 'Hennemann Supply Chain Consulting',
             date: 'May 2023 - Jun 2025',
-            desc: 'Data analysis, strategic negotiation, and procurement process optimization.'
+            desc: 'Led RFI/RFQ/RFP processes, managed end-to-end POs via ERP (P2P), conducted TCO analyses, and built Power BI/Excel dashboards for KPI monitoring.'
           }
         ]
       },
@@ -108,77 +91,61 @@ export const translations = {
             period: '2020 - 2026 (Ongoing)'
           },
           {
-            inst: 'Educative.io & Coursera',
-            course: 'ASP.NET Backend & Meta Frontend',
-            period: '2026 - Present'
-          },
-          {
             inst: 'MITx MicroMasters',
             course: 'Supply Chain Management',
             period: '2023 - 2024'
           }
         ]
       },
-    footer: {
-      madeWith: 'Built with',
-      by: 'by Guilherme do Prado.'
+      footer: {
+        madeWith: 'Built with',
+        by: 'by Guilherme do Prado.'
       },
       portfolio: {
-        title: 'Portfolio',
-        subtitle: 'Projects focused on clean architecture and complex business rules.',
+        title: 'Procurement & Data Portfolio',
+        subtitle: 'Projects focused on purchasing intelligence, cost analysis, and data visualization.',
         projects: {
-          heatsphere: {
-            desc: 'Note-taking platform with auxiliary tools for learning heat transfer concepts.'
+          spendAnalysis: {
+            desc: 'Interactive Power BI Dashboard showcasing Spend Analysis, supplier ABC classification, and OTIF / Lead Time monitoring.'
           },
-          valueprisma: {
-            desc: 'Personal finance management system with interactive dashboards for insights and expense optimization.'
+          costOptimization: {
+            desc: 'Advanced Excel and Python (Pandas) data modeling for Total Cost of Ownership (TCO) scenarios and savings simulation.'
           }
         }
       }
     }
   },
-  'cs-CZ': {
+  'de-DE': {
     nav: { profile: 'Profil', portfolio: 'Portfolio' },
     hero: {
-      role: 'Full Stack Vývojář | React + ASP.NET | Výrobní Inženýrství',
-      tags: ['React', 'ASP.NET Core', 'PostgreSQL', 'Angličtina C1'],
+      role: 'Einkäufer (Procurement Analyst) | Wirtschaftsingenieurwesen (UFSC) | MITx',
+      tags: ['Strategic Sourcing', 'Power BI & Excel', 'Lieferantenmanagement', 'Englisch C1'],
     },
     sections: {
       about: {
-        title: 'O mně',
-        p1: 'Student <strong>Strojního Průmyslového Inženýrství (UFSC)</strong> přecházející na vývoj softwaru.',
-        p2: 'Zaměřeno na řešení složitých obchodních problémů s čistou architekturou a výkonným kódem.',
+        title: 'Über Mich',
+        p1: 'Student des <strong>Wirtschaftsingenieurwesens (UFSC)</strong> mit einem MicroMasters in Supply Chain Management vom MIT.',
+        p2: 'Einkaufsspezialist mit praktischer Erfahrung in RFI/RFQ/RFP, Procure-to-Pay-Prozessen und Datenanalyse (Power BI/Excel) zur Kostenoptimierung und strategischen Entscheidungsfindung.',
       },
-      skills: { title: 'Technické Dovednosti' },
+      skills: { title: 'Technische Fähigkeiten' },
       exp: { 
-        title: 'Profesní Dráha',
+        title: 'Berufserfahrung',
         items: [
           {
-            role: 'Student na plný úvazek',
-            company: 'Full Stack Vývoj',
-            date: 'Led 2026 - Současnost',
-            desc: 'Intenzivní zaměření na React (Frontend) a ASP.NET Core (Backend).'
-          },
-          {
-            role: 'Konzultant dodavatelského řetězce',
-            company: 'Hennemann Consulting',
-            date: 'Kvě 2023 - Čer 2025',
-            desc: 'Analýza dat, strategické vyjednávání a optimalizace nákupních procesů.'
+            role: 'Procurement Consultant (Einkaufsberater)',
+            company: 'Hennemann Supply Chain Consulting',
+            date: 'Mai 2023 - Jun 2025',
+            desc: 'Durchführung von RFI/RFQ/RFP-Prozessen, End-to-End-Bestellabwicklung im ERP (P2P), TCO-Analysen und Erstellung von Power BI/Excel-Dashboards zur KPI-Überwachung.'
           }
         ]
       },
       edu: { 
-        title: 'Vzdělání',
+        title: 'Ausbildung',
         items: [
           {
-            inst: 'UFSC - Federální Univerzita Santa Catarina',
-            course: 'Strojní Průmyslové Inženýrství',
-            period: '2020 - 2026 (Probíhá)'
-          },
-          {
-            inst: 'Educative.io & Coursera',
-            course: 'ASP.NET Backend & Meta Frontend',
-            period: '2026 - Současnost'
+            inst: 'UFSC - Federal Univ. of Santa Catarina',
+            course: 'Maschinenbau & Wirtschaftsingenieurwesen',
+            period: '2020 - 2026 (Laufend)'
           },
           {
             inst: 'MITx MicroMasters',
@@ -187,19 +154,19 @@ export const translations = {
           }
         ]
       },
-         footer: {
-      madeWith: 'Vytvořeno pomocí',
-      by: 'od Guilherme do Prado.'
-    },
+      footer: {
+        madeWith: 'Erstellt mit',
+        by: 'von Guilherme do Prado.'
+      },
       portfolio: {
-        title: 'Portfolio',
-        subtitle: 'Projekty zaměřené na čistou architekturu a komplexní obchodní pravidla.',
+        title: 'Procurement & Data Portfolio',
+        subtitle: 'Projekte mit Fokus auf Einkaufsintelligenz, Kostenanalyse und Datenvisualisierung.',
         projects: {
-          heatsphere: {
-            desc: 'Platforma pro psaní poznámek a pomocné nástroje pro výuku přenosu tepla.'
+          spendAnalysis: {
+            desc: 'Interaktives Power BI-Dashboard zur Ausgabenanalyse (Spend Analysis), ABC-Lieferantenklassifizierung und Überwachung von OTIF und Lieferzeiten.'
           },
-          valueprisma: {
-            desc: 'Systém správy osobních financí s interaktivními dashboardy pro přehledy a optimalizaci výdajů.'
+          costOptimization: {
+            desc: 'Datenmodellierung mit Advanced Excel und Python (Pandas) zur Simulation von Total Cost of Ownership (TCO)-Szenarien und Einsparungen.'
           }
         }
       }
