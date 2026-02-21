@@ -1,4 +1,4 @@
-import { Mail, Download } from 'lucide-react'; 
+import { Mail } from 'lucide-react'; 
 import { FaLinkedin } from 'react-icons/fa';
 import profilePic from '../../assets/images/guilherme-do-prado-picture.jpg';
 
