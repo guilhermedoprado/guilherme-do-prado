@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/Guilherme-do-Prado.Api/Guilherme-do-Prado.Api.csproj" />
+    <Project Path="backend/Guilherme-do-Prado.Application/Guilherme-do-Prado.Application.csproj" />
+    <Project Path="backend/Guilherme-do-Prado.Domain/Guilherme-do-Prado.Domain.csproj" />
+    <Project Path="backend/Guilherme-do-Prado.Infrastructure/Guilherme-do-Prado.Infrastructure.csproj" />
+  </Folder>
+</Solution>

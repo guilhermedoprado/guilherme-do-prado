@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Guilherme_do_Prado.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.3.9" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.12.40" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Guilherme-do-Prado.Application\Guilherme-do-Prado.Application.csproj" />
+    <ProjectReference Include="..\Guilherme-do-Prado.Infrastructure\Guilherme-do-Prado.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

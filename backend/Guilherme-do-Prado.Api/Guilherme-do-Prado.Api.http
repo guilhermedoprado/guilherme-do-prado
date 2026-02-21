@@ -1,0 +1,6 @@
+@Guilherme_do_Prado.Api_HostAddress = http://localhost:5096
+
+GET {{Guilherme_do_Prado.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
