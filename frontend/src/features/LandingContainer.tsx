@@ -6,8 +6,8 @@ interface LandingContainerProps {
 
 export default function LandingContainer({ children }: LandingContainerProps) {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-slate-800 selection:text-white">
-      {children}
-    </div>
+      <div className="min-h-screen bg-[#2D1B69] font-sans text-white selection:bg-purple-300 selection:text-purple-900">
+        {children}
+      </div>
   );
 }

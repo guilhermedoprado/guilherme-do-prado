@@ -1,175 +1,151 @@
-export type Lang = 'pt-BR' | 'en-US' | 'de-DE';
+export type Lang = 'pt-BR' | 'en-US';
 
 export const translations = {
   'pt-BR': {
     nav: { profile: 'Perfil', portfolio: 'Portfólio' },
     hero: {
-      role: 'Analista de Compras | Eng. Produção UFSC | MITx',
-      tags: ['Strategic Sourcing', 'Power BI & Excel', 'Gestão de Fornecedores', 'Inglês C1'],
+      role: 'Desenvolvedor Full Stack | C# · ASP.NET Core · React | Eng. Produção UFSC',
+      tags: ['C# / ASP.NET Core', 'React / TypeScript', 'PostgreSQL / Docker', 'MITx Supply Chain'],
     },
     sections: {
       about: {
         title: 'Sobre Mim',
-        p1: 'Estudante de <strong>Engenharia de Produção Mecânica (UFSC)</strong> com MicroMasters em Supply Chain Management pelo MIT.',
-        p2: 'Profissional de Procurement com experiência prática em RFI/RFQ/RFP, ciclo Procure-to-Pay e análise de dados (Power BI/Excel) para otimização de custos e decisões estratégicas.',
+        p1: 'Desenvolvedor Full Stack com foco em <strong>C#, ASP.NET Core, React e TypeScript</strong>. Estudante de Engenharia de Produção Mecânica (UFSC) com MicroMasters em Supply Chain Management pelo MIT.',
+        p2: 'Dois anos de experiência em Procurement me deram visão de negócio que aplico diretamente no desenvolvimento: entendo o problema antes de escrever a primeira linha de código. Esse contexto acelera minha curva em modelagem de dados, lógica de backend e construção de produtos com propósito real.',
       },
       skills: { title: 'Habilidades Técnicas' },
-      exp: { 
+      exp: {
         title: 'Trajetória Profissional',
         items: [
           {
-            role: 'Consultor de Procurement',
+            role: 'Consultor de Procurement & Dados',
             company: 'Hennemann Supply Chain Consulting',
             date: 'Mai 2023 - Jun 2025',
-            desc: 'Condução de processos de RFI/RFQ/RFP, gestão de pedidos via ERP (P2P), análises de TCO e criação de dashboards em Power BI/Excel para monitoramento de KPIs.'
-          }
-        ]
+            desc: 'Desenvolvimento de dashboards em Power BI e Excel para KPIs de compras (Lead Time, Spend, OTIF). Gestão de pedidos via ERP com integração ao financeiro. Análises de TCO e modelagem de dados para decisões estratégicas de fornecimento.',
+          },
+        ],
       },
-      edu: { 
+      edu: {
         title: 'Formação Acadêmica',
         items: [
           {
             inst: 'UFSC - Univ. Federal de Santa Catarina',
             course: 'Engenharia de Produção Mecânica',
-            period: '2020 - 2026 (Em andamento)'
+            period: '2020 - 2026 (Em andamento)',
           },
           {
             inst: 'MITx MicroMasters',
             course: 'Supply Chain Management',
-            period: '2023 - 2024'
-          }
-        ]
+            period: '2023 - 2024',
+          },
+        ],
       },
-      footer: {
-        madeWith: 'Desenvolvido com',
-        by: 'por Guilherme do Prado.'
+      links: {
+        title: 'Conecte-se Comigo',
+        github: 'GitHub',
+        githubDesc: 'Repositórios e contribuições open-source.',
+        linkedin: 'LinkedIn',
+        linkedinDesc: 'Networking e trajetória profissional.',
+        email: 'E-mail',
+        emailDesc: 'Contate-me para parcerias.',
       },
       portfolio: {
-        title: 'Portfólio de Procurement & Dados',
-        subtitle: 'Projetos focados em inteligência de compras, análise de custos e visualização de dados.',
+        title: 'Portfólio',
+        subtitle: 'Projetos de desenvolvimento web full stack.',
+        comingSoon: 'Links e detalhes disponíveis em breve.',
         projects: {
-          spendAnalysis: {
-            desc: 'Dashboard interativo em Power BI demonstrando Análise de Spend, Curva ABC de fornecedores e monitoramento de OTIF e Lead Time.'
+          heatsphere: {
+            desc: 'Plataforma web para criação de notas e uso de ferramentas interativas no aprendizado de transmissão de calor. Backend em ASP.NET Core, frontend em React + TypeScript, banco PostgreSQL e containerização com Docker.',
+            status: 'EdTech',
           },
-          costOptimization: {
-            desc: 'Modelagem de dados em Excel Avançado e Python (Pandas) para simulação de cenários de TCO (Total Cost of Ownership) e savings.'
-          }
-        }
-      }
+          valuePrisma: {
+            desc: 'Dashboard de inteligência de procurement com análise de Spend, classificação ABC de fornecedores e simulação de cenários de custo. Construído com C# e React, hospedado na Azure.',
+            status: 'Analytics',
+          },
+          headyne: {
+            desc: 'E-commerce de fones de ouvido com catálogo de produtos, carrinho, checkout integrado com Stripe e painel de pedidos. Stack full stack com ASP.NET Core e React.',
+            status: 'E-commerce',
+          },
+        },
+      },
+    },
+    footer: {
+      madeWith: 'Desenvolvido com',
+      by: 'por Guilherme do Prado.',
     },
   },
+
   'en-US': {
     nav: { profile: 'Profile', portfolio: 'Portfolio' },
     hero: {
-      role: 'Procurement Analyst | Production Eng. UFSC | MITx',
-      tags: ['Strategic Sourcing', 'Power BI & Excel', 'Supplier Management', 'English C1'],
+      role: 'Full Stack Developer | C# · ASP.NET Core · React | Production Eng. UFSC',
+      tags: ['C# / ASP.NET Core', 'React / TypeScript', 'PostgreSQL / Docker', 'MITx Supply Chain'],
     },
     sections: {
       about: {
         title: 'About Me',
-        p1: '<strong>Mechanical Production Engineering student (UFSC)</strong> with a MicroMasters in Supply Chain Management from MIT.',
-        p2: 'Procurement professional with hands-on experience in RFI/RFQ/RFP, Procure-to-Pay cycles, and data analysis (Power BI/Excel) for cost optimization and strategic decision-making.',
+        p1: 'Full Stack Developer focused on <strong>C#, ASP.NET Core, React, and TypeScript</strong>. Mechanical Production Engineering student at UFSC with a MicroMasters in Supply Chain Management from MIT.',
+        p2: 'Two years in Procurement gave me a business-first mindset I apply directly to development: I understand the problem before writing the first line of code. That context accelerates my curve in data modeling, backend logic, and building products with real-world purpose.',
       },
       skills: { title: 'Technical Skills' },
-      exp: { 
+      exp: {
         title: 'Professional Path',
         items: [
           {
-            role: 'Procurement Consultant',
+            role: 'Procurement & Data Consultant',
             company: 'Hennemann Supply Chain Consulting',
             date: 'May 2023 - Jun 2025',
-            desc: 'Led RFI/RFQ/RFP processes, managed end-to-end POs via ERP (P2P), conducted TCO analyses, and built Power BI/Excel dashboards for KPI monitoring.'
-          }
-        ]
+            desc: 'Built Power BI and Excel dashboards for procurement KPIs (Lead Time, Spend, OTIF). Managed end-to-end purchase orders via ERP with finance integration. Conducted TCO analyses and data modeling for strategic sourcing decisions.',
+          },
+        ],
       },
-      edu: { 
+      edu: {
         title: 'Education',
         items: [
           {
             inst: 'UFSC - Federal Univ. of Santa Catarina',
             course: 'Mechanical Production Engineering',
-            period: '2020 - 2026 (Ongoing)'
+            period: '2020 - 2026 (Ongoing)',
           },
           {
             inst: 'MITx MicroMasters',
             course: 'Supply Chain Management',
-            period: '2023 - 2024'
-          }
-        ]
+            period: '2023 - 2024',
+          },
+        ],
       },
-      footer: {
-        madeWith: 'Built with',
-        by: 'by Guilherme do Prado.'
+      links: {
+        title: 'Connect',
+        github: 'GitHub',
+        githubDesc: 'Repositories and open-source contributions.',
+        linkedin: 'LinkedIn',
+        linkedinDesc: 'Networking and professional journey.',
+        email: 'Email',
+        emailDesc: "Let's talk about opportunities.",
       },
       portfolio: {
-        title: 'Procurement & Data Portfolio',
-        subtitle: 'Projects focused on purchasing intelligence, cost analysis, and data visualization.',
+        title: 'Portfolio',
+        subtitle: 'Full stack web development projects.',
+        comingSoon: 'Links and details available soon.',
         projects: {
-          spendAnalysis: {
-            desc: 'Interactive Power BI Dashboard showcasing Spend Analysis, supplier ABC classification, and OTIF / Lead Time monitoring.'
+          heatsphere: {
+            desc: 'Web platform for note-taking and interactive tools for heat transfer learning. Backend in ASP.NET Core, frontend in React + TypeScript, PostgreSQL database, containerized with Docker.',
+            status: 'EdTech',
           },
-          costOptimization: {
-            desc: 'Advanced Excel and Python (Pandas) data modeling for Total Cost of Ownership (TCO) scenarios and savings simulation.'
-          }
-        }
-      }
-    }
-  },
-  'de-DE': {
-    nav: { profile: 'Profil', portfolio: 'Portfolio' },
-    hero: {
-      role: 'Einkäufer (Procurement Analyst) | Wirtschaftsingenieurwesen (UFSC) | MITx',
-      tags: ['Strategic Sourcing', 'Power BI & Excel', 'Lieferantenmanagement', 'Englisch C1'],
+          valuePrisma: {
+            desc: 'Procurement intelligence dashboard with Spend Analysis, supplier ABC classification, and cost scenario simulation. Built with C# and React, hosted on Azure.',
+            status: 'Analytics',
+          },
+          headyne: {
+            desc: 'Headphone e-commerce with product catalog, cart, Stripe-integrated checkout, and order management panel. Full stack with ASP.NET Core and React.',
+            status: 'E-commerce',
+          },
+        },
+      },
     },
-    sections: {
-      about: {
-        title: 'Über Mich',
-        p1: 'Student des <strong>Wirtschaftsingenieurwesens (UFSC)</strong> mit einem MicroMasters in Supply Chain Management vom MIT.',
-        p2: 'Einkaufsspezialist mit praktischer Erfahrung in RFI/RFQ/RFP, Procure-to-Pay-Prozessen und Datenanalyse (Power BI/Excel) zur Kostenoptimierung und strategischen Entscheidungsfindung.',
-      },
-      skills: { title: 'Technische Fähigkeiten' },
-      exp: { 
-        title: 'Berufserfahrung',
-        items: [
-          {
-            role: 'Procurement Consultant (Einkaufsberater)',
-            company: 'Hennemann Supply Chain Consulting',
-            date: 'Mai 2023 - Jun 2025',
-            desc: 'Durchführung von RFI/RFQ/RFP-Prozessen, End-to-End-Bestellabwicklung im ERP (P2P), TCO-Analysen und Erstellung von Power BI/Excel-Dashboards zur KPI-Überwachung.'
-          }
-        ]
-      },
-      edu: { 
-        title: 'Ausbildung',
-        items: [
-          {
-            inst: 'UFSC - Federal Univ. of Santa Catarina',
-            course: 'Maschinenbau & Wirtschaftsingenieurwesen',
-            period: '2020 - 2026 (Laufend)'
-          },
-          {
-            inst: 'MITx MicroMasters',
-            course: 'Supply Chain Management',
-            period: '2023 - 2024'
-          }
-        ]
-      },
-      footer: {
-        madeWith: 'Erstellt mit',
-        by: 'von Guilherme do Prado.'
-      },
-      portfolio: {
-        title: 'Procurement & Data Portfolio',
-        subtitle: 'Projekte mit Fokus auf Einkaufsintelligenz, Kostenanalyse und Datenvisualisierung.',
-        projects: {
-          spendAnalysis: {
-            desc: 'Interaktives Power BI-Dashboard zur Ausgabenanalyse (Spend Analysis), ABC-Lieferantenklassifizierung und Überwachung von OTIF und Lieferzeiten.'
-          },
-          costOptimization: {
-            desc: 'Datenmodellierung mit Advanced Excel und Python (Pandas) zur Simulation von Total Cost of Ownership (TCO)-Szenarien und Einsparungen.'
-          }
-        }
-      }
-    }
-  }
+    footer: {
+      madeWith: 'Built with',
+      by: 'by Guilherme do Prado.',
+    },
+  },
 };

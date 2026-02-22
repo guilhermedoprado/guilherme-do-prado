@@ -1,30 +1,35 @@
 export interface Project {
   id: string;
   title: string;
-  description: string;
   tags: string[];
   imageUrl: string;
-  liveUrl: string; // O subdomínio
-  detailsUrl: string; // A rota interna
+  liveUrl: string;
+  detailsUrl: string;
 }
 
 export const projects: Project[] = [
   {
     id: 'heatsphere',
     title: 'HeatSphere',
-    description: 'Plataforma de criação de notas e utilização de ferramentas para aprendizado de transmissão de calor.',
-    tags: ['React', 'ASP.NET Core', 'PostgreSQL'],
-    imageUrl: '/projects/heatsphere-thumb.jpg', // Coloque na pasta public
+    tags: ['React', 'ASP.NET Core', 'PostgreSQL', 'Docker'],
+    imageUrl: '/projects/heatsphere-thumb.jpg',
     liveUrl: 'https://heatsphere.guilhermedoprado.com',
-    detailsUrl: '/projects/heatsphere'
+    detailsUrl: '/projects/heatsphere',
   },
   {
-    id: 'value-prisma',
+    id: 'valuePrisma',
     title: 'Value Prisma',
-    description: 'Sistema de gestão de finanças pessoais com foco em visualização de dados e insights para otimização de gastos.',
-    tags: ['C#', 'React', 'Azure'],
+    tags: ['C#', 'React', 'Azure', 'TypeScript'],
     imageUrl: '/projects/value-prisma-thumb.jpg',
     liveUrl: 'https://valueprisma.guilhermedoprado.com',
-    detailsUrl: '/projects/value-prisma'
-  }
+    detailsUrl: '/projects/value-prisma',
+  },
+  {
+    id: 'headyne',
+    title: 'Headyne',
+    tags: ['React', 'TypeScript', 'ASP.NET Core', 'Stripe'],
+    imageUrl: '/projects/headyne-thumb.jpg',
+    liveUrl: 'https://headyne.guilhermedoprado.com',
+    detailsUrl: '/projects/headyne',
+  },
 ];
