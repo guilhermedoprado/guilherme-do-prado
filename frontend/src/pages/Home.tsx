@@ -14,7 +14,7 @@ export default function Home() {
   
   const [lang, setLang] = useState<Lang>(() => {
     const saved = localStorage.getItem('language') as Lang;
-    const valid: Lang[] = ['pt-BR', 'en-US', 'de-DE'];
+    const valid: Lang[] = ['pt-BR', 'en-US'];
     return valid.includes(saved) ? saved : 'pt-BR';
   });
 
