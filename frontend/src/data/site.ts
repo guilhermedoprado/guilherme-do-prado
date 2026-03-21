@@ -131,8 +131,8 @@ export const site = {
   },
   contact: {
     title: 'Contact',
-    availability:
-      '🟢 Currently based in Brazil 🇧🇷 and available for remote roles and relocation to Stockholm 🇸🇪 — Response time: < 48h',
+    note:
+      'Open to procurement and analytics roles — remote, hybrid, or relocation to Sweden. 🟢 Based in Brazil 🇧🇷; available for remote work and relocation to Stockholm 🇸🇪 — I usually reply within 48 hours.',
     email: 'contact@guilhermedoprado.com',
     linkedin: 'https://linkedin.com/in/guidoprado',
     github: 'https://github.com/guilhermedoprado',

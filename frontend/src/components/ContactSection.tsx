@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 import { site } from '../data/site'
 
 export function ContactSection() {
-  const { title, note, availability, email, linkedin, github } = site.contact
+  const { title, note, email, linkedin, github } = site.contact
   return (
     <section
       id="contact"
@@ -16,8 +16,7 @@ export function ContactSection() {
         >
           {title}
         </h2>
-        <p className="text-fluid-body mt-4 max-w-2xl text-muted">{note}</p>
-        <p className="text-fluid-body mt-3 max-w-2xl text-gray-700">{availability}</p>
+        <p className="text-fluid-body mt-4 max-w-2xl leading-relaxed text-gray-700">{note}</p>
         <div className="mt-10 flex flex-wrap gap-3">
           <a
             href={`mailto:${email}`}
