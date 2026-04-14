@@ -22,15 +22,13 @@ function hasFeatures(
 }
 
 const accentBorder: Record<string, string> = {
-  'spend-analytics': 'border-l-yellow-400',
+  'industrial-procurement-dashboard': 'border-l-blue-600',
   'supplier-performance': 'border-l-green-500',
-  'value-prisma': 'border-l-blue-600',
 }
 
 const accentIconWrap: Record<string, string> = {
-  'spend-analytics': 'border-yellow-300 bg-yellow-400/20 text-yellow-800',
+  'industrial-procurement-dashboard': 'border-blue-500 bg-blue-600/10 text-blue-700',
   'supplier-performance': 'border-green-400 bg-green-500/15 text-green-800',
-  'value-prisma': 'border-blue-500 bg-blue-600/10 text-blue-700',
 }
 
 export function PortfolioPage() {
@@ -56,7 +54,7 @@ export function PortfolioPage() {
             Portfolio
           </h1>
           <p className="text-fluid-body mt-4 max-w-2xl text-muted">
-            Procurement analytics dashboards and an internal tooling concept — embeds go live as
+            Procurement analytics dashboards — embeds go live as
             environments are published.
           </p>
         </header>
@@ -100,7 +98,7 @@ export function PortfolioPage() {
                 </div>
               )}
 
-              {'callout' in project && project.callout && (
+              {'callout' in project && typeof project.callout === 'string' && (
                 <aside className="mt-8 rounded-lg border border-border bg-accent-subtle/40 p-5 text-sm leading-relaxed text-ink shadow-sm">
                   {project.callout}
                 </aside>
