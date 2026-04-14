@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ChevronDown, Download, Linkedin, MapPin } from 'lucide-react'
+import cvPdf from '../assets/images/CV_Guilherme_do_Prado.pdf'
 import { HeroBackground } from './HeroBackground'
 import { site } from '../data/site'
 
@@ -35,8 +36,8 @@ export function HeroSection() {
             {site.hero.ctaPortfolio}
           </Link>
           <a
-            href="/cv.pdf"
-            download
+            href={cvPdf}
+            download="CV_Guilherme_do_Prado.pdf"
             className="text-fluid-body inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-surface px-5 py-2.5 font-semibold text-ink shadow-sm transition-[border-color,transform] duration-200 hover:border-accent/40 hover:scale-[1.01]"
           >
             <Download className="size-4 shrink-0" aria-hidden />

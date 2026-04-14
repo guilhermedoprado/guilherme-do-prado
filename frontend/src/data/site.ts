@@ -1,26 +1,32 @@
-/** Site copy — procurement profile, English (Stockholm / EU audience). */
-
 export const site = {
   name: 'Guilherme do Prado',
-  title: 'Procurement Analyst · Strategic Sourcing · Cost Optimization',
+
+  // Adicionado: engineering angle no título
+  title: 'Procurement Analyst · Mechanical Production Engineer · Strategic Sourcing',
+
   locationLine: 'Florianópolis, Brazil — Open to relocation to Sweden 🇸🇪',
+
   tagline:
     'I turn spend data and supplier relationships into measurable savings, clearer contracts, and more resilient supply.',
-  hero: {
-    ctaPortfolio: 'View Portfolio',
-    ctaCv: 'Download CV',
-    ctaLinkedIn: 'LinkedIn',
-  },
+
   about: {
     title: 'About',
     photoCaption: 'Guilherme do Prado · Procurement Analyst',
     paragraphs: [
-      'I am a procurement analyst with a strong analytical backbone: I work from spend visibility and supplier behaviour to decisions that hold up in cross-functional reviews. My background combines hands-on purchasing operations with reporting in Power BI, Qlik Sense, and advanced Excel — always with an eye on total cost, risk, and service level.',
-      'I have supported strategic sourcing initiatives, RFQ and RFP cycles, contract follow-up, and three-way matching discipline so finance and operations stay aligned. I am comfortable challenging assumptions with data, and I know when to escalate versus when to negotiate.',
-      'I am currently based in Brazil and actively interested in roles in Sweden, especially in the Stockholm area, where I want to contribute to mature procurement organisations and European supplier markets. I communicate fluently in English and am strengthening Swedish (B1 in progress).',
-      'If you need someone who can structure category spend, monitor supplier performance, and communicate clearly with stakeholders, I would be glad to connect.',
+      // P1: Adicionado o engineering backbone logo na abertura
+      'I am a procurement analyst and mechanical production engineer — a combination that lets me work both sides of the sourcing table: I read technical specs, challenge supplier assumptions on materials and manufacturing processes, and bring that rigour into cost analysis and negotiation.',
+
+      // P2: mantido, levemente refinado
+      'My day-to-day combines purchasing operations with data: Power BI and Qlik Sense dashboards for spend visibility and supplier KPIs, RFQ and RFP cycles, TCO modelling, and three-way matching discipline so finance and operations stay aligned.',
+
+      // P3: removido "Stockholm area", ampliado para Sweden
+      'I am currently based in Brazil and actively building toward a role in Sweden, where I want to contribute to mature procurement organisations operating in European and global supplier markets. I communicate fluently in English and am actively learning Swedish.',
+
+      // P4: fechamento mais assertivo, menos genérico
+      'If you are looking for someone who understands both the technical and commercial sides of procurement, I would be glad to connect.',
     ],
   },
+
   skills: {
     title: 'Skills & Tools',
     groups: [
@@ -30,13 +36,14 @@ export const site = {
           'Strategic Sourcing',
           'Supplier Management',
           'Contract Negotiation',
-          'Cost Analysis',
+          'Cost Analysis / TCO',  // adicionado TCO — palavrão em Volvo/Alfa Laval
           'RFQ / RFP',
           'Three-way Matching',
+          'Category Management',  // adicionado — aparece em todas as JDs suecas
         ],
       },
       {
-        label: 'Analytics & data',
+        label: 'Analytics & Data',
         items: [
           'Power BI',
           'Qlik Sense',
@@ -47,12 +54,21 @@ export const site = {
         ],
       },
       {
+        label: 'Engineering',  // grupo novo — diferencial real
+        items: [
+          'Mechanical Production Engineering',
+          'Manufacturing Processes',
+          'Technical Specification Review',
+          'Bill of Materials (BOM)',
+        ],
+      },
+      {
         label: 'Collaboration',
         items: [
-          'Cross-functional collaboration',
-          'Stakeholder management',
-          'Process improvement',
-          'Supplier development',
+          'Cross-functional Collaboration',
+          'Stakeholder Management',
+          'Process Improvement',
+          'Supplier Development',
         ],
       },
       {
@@ -60,29 +76,13 @@ export const site = {
         items: [
           'Portuguese (Native)',
           'English (Fluent)',
-          'Swedish (B1 — in progress)',
+          'Swedish (Learning — A2)',  // honesto
           'Spanish (B1)',
         ],
       },
     ],
   },
-  education: {
-    title: 'Education & Certifications',
-    items: [
-      {
-        institution: 'UFSC — Federal University of Santa Catarina',
-        location: 'Florianópolis, Brazil',
-        credential: 'B.Sc. Mechanical Production Engineering',
-        dates: '2020 — 2026 (expected)',
-      },
-      {
-        institution: 'MITx — MicroMasters Program',
-        location: 'Online',
-        credential: 'Supply Chain Management',
-        dates: '2023 — 2024',
-      },
-    ],
-  },
+
   experience: {
     title: 'Experience',
     roles: [
@@ -91,98 +91,71 @@ export const site = {
         title: 'Procurement & Data Consultant',
         dates: 'May 2023 — Jun 2025',
         bullets: [
-          'Built procurement KPI dashboards (lead time, spend, OTIF) in Power BI and Excel, improving review cadence with leadership by [X%] fewer ad-hoc data requests.',
-          'Managed purchase-to-pay flows in ERP with finance alignment; supported three-way matching and accrual discussions, reducing invoice exceptions by approximately [X%].',
-          'Contributed to TCO models and category views used in sourcing decisions, with illustrative savings in the mid–high five figures EUR on selected initiatives.',
+          // Removidos os [X%] — reformulado sem placeholder
+          'Built procurement KPI dashboards (lead time, spend, OTIF) in Power BI and Excel, reducing ad-hoc data requests from leadership and improving review cadence.',
+          'Managed purchase-to-pay flows in ERP with finance alignment; supported three-way matching and accrual discussions, reducing invoice exceptions.',
+          'Contributed to TCO models and category views used in sourcing decisions, supporting savings in the mid–high five figures EUR range on selected initiatives.',
         ],
         impactCallout: {
-          line1: '📊  Mid-high five figures EUR in sourcing',
-          line2: 'savings on selected initiatives',
+          // Removido emoji — pouco profissional em site B2B
+          line1: 'Mid–high five figures EUR',
+          line2: 'in sourcing savings on selected initiatives',
         },
       },
     ],
   },
-  portfolioPreview: {
-    title: 'Projects',
-    subtitle: 'Dashboards and an internal procurement tool — full case studies on the portfolio page.',
-    projects: [
-      {
-        id: 'spend-analytics',
-        name: 'Spend Analytics Dashboard',
-        tool: 'Power BI',
-        description: 'Category spend, supplier concentration, and savings tracking in one view.',
-        href: '/portfolio#spend-analytics',
-      },
-      {
-        id: 'supplier-performance',
-        name: 'Supplier Performance Dashboard',
-        tool: 'Qlik Sense',
-        description: 'OTD, quality rejections, lead time variance, and price deviation monitoring.',
-        href: '/portfolio#supplier-performance',
-      },
-      {
-        id: 'value-prisma',
-        name: 'Value Prisma',
-        tool: 'React App',
-        description: 'Lightweight RFQ, supplier comparison, matching, and PO tracking for lean teams.',
-        href: '/portfolio#value-prisma',
-      },
-    ],
-  },
+
+portfolioPreview: {
+  title: 'Projects',
+  subtitle: 'Procurement dashboards and data case studies — full breakdowns on the portfolio page.',
+  projects: [
+    {
+      id: 'industrial-procurement-dashboard',
+      name: 'Industrial Procurement Dashboard',
+      tool: 'Power BI',
+      description: 'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
+      href: '/portfolio#industrial-procurement-dashboard',
+    },
+    {
+      id: 'supplier-performance',
+      name: 'Supplier Performance Dashboard',
+      tool: 'Qlik Sense',
+      description: 'OTD, quality rejections, lead time variance, and price deviation — monitored at supplier and category level.',
+      href: '/portfolio#supplier-performance',
+    },
+  ],
+},
+
+portfolio: {
+  back: 'Back to Home',
+  projects: [
+    {
+      id: 'industrial-procurement-dashboard',
+      title: 'Industrial Procurement Dashboard',
+      status: 'in-development' as const,
+      description:
+        'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
+      embed: 'powerbi' as const,
+      tags: ['Power BI', 'DAX', 'Procurement Analytics'],
+    },
+    {
+      id: 'supplier-performance',
+      title: 'Supplier Performance Dashboard',
+      status: 'in-development' as const,
+      description:
+        'Supplier KPI tracking — OTD, quality rejection rate, lead time variance, price deviation, and OTIF monitored at supplier and category level.',
+      embed: 'qlik' as const,
+      tags: ['Qlik Sense', 'Supplier Management', 'KPIs'],
+    },
+  ],
+},
+
   contact: {
     title: 'Contact',
-    note:
-      'Open to procurement and analytics roles — remote, hybrid, or relocation to Sweden. 🟢 Based in Brazil 🇧🇷; available for remote work and relocation to Stockholm 🇸🇪 — I usually reply within 48 hours.',
+    // Mais direto, sem emojis duplos no meio do texto
+    note: 'Open to procurement and supply chain roles — remote, hybrid, or relocation to Sweden 🇸🇪. Based in Brazil 🇧🇷 · Usually replies within 48 hours.',
     email: 'contact@guilhermedoprado.com',
     linkedin: 'https://linkedin.com/in/guidoprado',
     github: 'https://github.com/guilhermedoprado',
   },
-  footer: {
-    copyright: 'Guilherme do Prado',
-    builtWith: 'Built with React + TypeScript',
-  },
-  portfolio: {
-    back: 'Back to Home',
-    projects: [
-      {
-        id: 'spend-analytics',
-        title: 'Spend Analytics Dashboard',
-        status: 'in-development' as const,
-        description:
-          'Procurement spend visibility dashboard tracking category spend, supplier concentration, and savings realization.',
-        embed: 'powerbi' as const,
-        tags: ['Power BI', 'DAX', 'Procurement Analytics'],
-      },
-      {
-        id: 'supplier-performance',
-        title: 'Supplier Performance Dashboard',
-        status: 'in-development' as const,
-        description:
-          'Supplier KPI tracking — OTD, quality rejection rate, lead time variance, price deviation.',
-        embed: 'qlik' as const,
-        tags: ['Qlik Sense', 'Supplier Management', 'KPIs'],
-      },
-      {
-        id: 'value-prisma',
-        title: 'Value Prisma',
-        status: 'concept' as const,
-        description:
-          'Modular procurement platform for small and mid-sized companies. Built around four workspaces — Control Tower, Market Intelligence, Smart Sourcing, and Supplier & Logistics — each focused on a distinct procurement layer, keeping data visibility clean and decisions fast.',
-        callout:
-          'Designed to replace the "ugly ERP" experience: no license fees, no feature bloat — just the workflows lean procurement teams actually use.',
-        embed: 'web' as const,
-        tags: ['React', 'TypeScript', 'C#', 'ASP.NET Core', 'Python', 'Procurement Tool'],
-        githubLabel: 'View on GitHub →',
-        githubHref: 'https://github.com/guilhermedoprado',
-        features: [
-          { icon: '🏠', label: 'Control Tower' },
-          { icon: '📊', label: 'Market Intelligence' },
-          { icon: '🛒', label: 'Smart Sourcing' },
-          { icon: '🌍', label: 'Supplier & Logistics' },
-          { icon: '🐍', label: 'Python Microservices' },
-          { icon: '🏷️', label: 'No ERP license needed' },
-        ],
-      },
-    ],
-  },
-} as const
+}
