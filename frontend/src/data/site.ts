@@ -3,7 +3,7 @@ export const site = {
 
   title: 'Procurement Analyst · Mechanical Production Engineer · Strategic Sourcing',
 
-  locationLine: 'Florianópolis, Brazil — Open to relocation to Sweden 🇸🇪',
+  locationLine: 'Florianópolis, Brazil — Open to relocation to Finland 🇫🇮',
 
   tagline:
     'I turn spend data and supplier relationships into measurable savings, clearer contracts, and more resilient supply.',
@@ -14,7 +14,6 @@ export const site = {
     ctaLinkedIn: 'LinkedIn',
   },
 
-
   about: {
     title: 'About',
     photoCaption: 'Guilherme do Prado · Procurement Analyst',
@@ -23,7 +22,7 @@ export const site = {
 
       'My day-to-day combines purchasing operations with data: Power BI and Qlik Sense dashboards for spend visibility and supplier KPIs, RFQ and RFP cycles, TCO modelling, and three-way matching discipline so finance and operations stay aligned.',
 
-      'I am currently based in Brazil and actively building toward a role in Sweden, where I want to contribute to mature procurement organisations operating in European and global supplier markets. I communicate fluently in English and am actively learning Swedish.',
+      'I am currently based in Brazil and actively building toward a role in Finland, where I want to contribute to industrial organisations — such as those in energy, manufacturing, and capital goods — operating in European and global supplier markets. I communicate fluently in English and am actively learning Finnish.',
 
       'If you are looking for someone who understands both the technical and commercial sides of procurement, I would be glad to connect.',
     ],
@@ -38,7 +37,7 @@ export const site = {
           'Strategic Sourcing',
           'Supplier Management',
           'Contract Negotiation',
-          'Cost Analysis / TCO', 
+          'Cost Analysis / TCO',
           'RFQ / RFP',
           'Three-way Matching',
           'Category Management',
@@ -78,7 +77,7 @@ export const site = {
         items: [
           'Portuguese (Native)',
           'English (Fluent)',
-          'Swedish (Learning — A2)',
+          'Finnish (Learning — A1)',
           'Spanish (B1)',
         ],
       },
@@ -106,71 +105,71 @@ export const site = {
   },
 
   education: {
-  title: 'Education & Certifications',
-  items: [
-    {
-      institution: 'UFSC — Federal University of Santa Catarina',
-      location: 'Florianópolis, Brazil',
-      credential: 'B.Sc. Mechanical Production Engineering',
-      dates: '2020 — 2026 (expected)',
-    },
-    {
-      institution: 'MITx — MicroMasters Program',
-      location: 'Online',
-      credential: 'Supply Chain Management',
-      dates: '2023 — 2024',
-    },
-  ],
-},
+    title: 'Education & Certifications',
+    items: [
+      {
+        institution: 'UFSC — Federal University of Santa Catarina',
+        location: 'Florianópolis, Brazil',
+        credential: 'B.Sc. Mechanical Production Engineering',
+        dates: '2020 — 2026 (expected)',
+      },
+      {
+        institution: 'MITx — MicroMasters Program',
+        location: 'Online',
+        credential: 'Supply Chain Management',
+        dates: '2023 — 2024',
+      },
+    ],
+  },
 
-portfolioPreview: {
-  title: 'Projects',
-  subtitle: 'Procurement dashboards and data case studies — full breakdowns on the portfolio page.',
-  projects: [
-    {
-      id: 'industrial-procurement-dashboard',
-      name: 'Industrial Procurement Dashboard',
-      tool: 'Power BI',
-      description: 'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
-      href: '/portfolio#industrial-procurement-dashboard',
-    },
-    {
-      id: 'supplier-performance',
-      name: 'Supplier Performance Dashboard',
-      tool: 'Qlik Sense',
-      description: 'OTD, quality rejections, lead time variance, and price deviation — monitored at supplier and category level.',
-      href: '/portfolio#supplier-performance',
-    },
-  ],
-},
+  portfolioPreview: {
+    title: 'Projects',
+    subtitle: 'Procurement dashboards and data case studies — full breakdowns on the portfolio page.',
+    projects: [
+      {
+        id: 'industrial-procurement-dashboard',
+        name: 'Industrial Procurement Dashboard',
+        tool: 'Power BI',
+        description: 'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
+        href: '/portfolio#industrial-procurement-dashboard',
+      },
+      {
+        id: 'supplier-performance',
+        name: 'Supplier Performance Dashboard',
+        tool: 'Qlik Sense',
+        description: 'OTD, quality rejections, lead time variance, and price deviation — monitored at supplier and category level.',
+        href: '/portfolio#supplier-performance',
+      },
+    ],
+  },
 
-portfolio: {
-  back: 'Back to Home',
-  projects: [
-    {
-      id: 'industrial-procurement-dashboard',
-      title: 'Industrial Procurement Dashboard',
-      status: 'in-development' as const,
-      description:
-        'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
-      embed: 'powerbi' as const,
-      tags: ['Power BI', 'DAX', 'Procurement Analytics'],
-    },
-    {
-      id: 'supplier-performance',
-      title: 'Supplier Performance Dashboard',
-      status: 'in-development' as const,
-      description:
-        'Supplier KPI tracking — OTD, quality rejection rate, lead time variance, price deviation, and OTIF monitored at supplier and category level.',
-      embed: 'qlik' as const,
-      tags: ['Qlik Sense', 'Supplier Management', 'KPIs'],
-    },
-  ],
-},
+  portfolio: {
+    back: 'Back to Home',
+    projects: [
+      {
+        id: 'industrial-procurement-dashboard',
+        title: 'Industrial Procurement Dashboard',
+        status: 'in-development' as const,
+        description:
+          'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
+        embed: 'powerbi' as const,
+        tags: ['Power BI', 'DAX', 'Procurement Analytics'],
+      },
+      {
+        id: 'supplier-performance',
+        title: 'Supplier Performance Dashboard',
+        status: 'in-development' as const,
+        description:
+          'Supplier KPI tracking — OTD, quality rejection rate, lead time variance, price deviation, and OTIF monitored at supplier and category level.',
+        embed: 'qlik' as const,
+        tags: ['Qlik Sense', 'Supplier Management', 'KPIs'],
+      },
+    ],
+  },
 
   contact: {
     title: 'Contact',
-    note: 'Open to procurement and supply chain roles — remote, hybrid, or relocation to Sweden 🇸🇪. Based in Brazil 🇧🇷 · Usually replies within 48 hours.',
+    note: 'Open to procurement and supply chain roles — remote, hybrid, or relocation to Finland 🇫🇮. Based in Brazil 🇧🇷 · Usually replies within 48 hours.',
     email: 'contact@guilhermedoprado.com',
     linkedin: 'https://linkedin.com/in/guidoprado',
     github: 'https://github.com/guilhermedoprado',
