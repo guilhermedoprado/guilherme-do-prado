@@ -3,7 +3,7 @@ export const site = {
 
   title: 'Procurement Analyst · Mechanical Production Engineer · Strategic Sourcing',
 
-  locationLine: 'Florianópolis, Brazil — Open to relocation to Finland 🇫🇮',
+  locationLine: 'Florianópolis, Brazil — Open to relocation to Germany 🇩🇪',
 
   tagline:
     'I turn spend data and supplier relationships into measurable savings, clearer contracts, and more resilient supply.',
@@ -22,7 +22,7 @@ export const site = {
 
       'My day-to-day combines purchasing operations with data: Power BI and Qlik Sense dashboards for spend visibility and supplier KPIs, RFQ and RFP cycles, TCO modelling, and three-way matching discipline so finance and operations stay aligned.',
 
-      'I am currently based in Brazil and actively building toward a role in Finland, where I want to contribute to industrial organisations — such as those in energy, manufacturing, and capital goods — operating in European and global supplier markets. I communicate fluently in English and am actively learning Finnish.',
+      'I am currently based in Brazil and actively building toward a role in Germany, where I want to contribute to industrial organisations — particularly in the automotive, energy, and capital goods sectors — operating in European and global supplier markets. I communicate fluently in English and am actively learning German.',
 
       'If you are looking for someone who understands both the technical and commercial sides of procurement, I would be glad to connect.',
     ],
@@ -76,8 +76,8 @@ export const site = {
         label: 'Languages',
         items: [
           'Portuguese (Native)',
-          'English (Fluent)',
-          'Finnish (Learning — A1)',
+          'English (Fluent — C1)',
+          'German (Learning — A1, targeting B2)',
           'Spanish (B1)',
         ],
       },
@@ -92,7 +92,7 @@ export const site = {
         title: 'Procurement & Data Consultant',
         dates: 'May 2023 — Jun 2025',
         bullets: [
-          'Built procurement KPI dashboards (lead time, spend, OTIF) in Power BI and Excel, reducing ad-hoc data requests from leadership and improving review cadence.',
+          'Built procurement KPI dashboards (lead time, spend, OTIF) in Power BI and Qlik Sense, reducing ad-hoc data requests from leadership and improving review cadence.',
           'Managed purchase-to-pay flows in ERP with finance alignment; supported three-way matching and accrual discussions, reducing invoice exceptions.',
           'Contributed to TCO models and category views used in sourcing decisions, supporting savings in the mid–high five figures EUR range on selected initiatives.',
         ],
@@ -169,7 +169,7 @@ export const site = {
 
   contact: {
     title: 'Contact',
-    note: 'Open to procurement and supply chain roles — remote, hybrid, or relocation to Finland 🇫🇮. Based in Brazil 🇧🇷 · Usually replies within 48 hours.',
+    note: 'Open to procurement and supply chain roles — remote, hybrid, or relocation to Germany 🇩🇪. Based in Brazil 🇧🇷 · Usually replies within 48 hours.',
     email: 'contact@guilhermedoprado.com',
     linkedin: 'https://linkedin.com/in/guidoprado',
     github: 'https://github.com/guilhermedoprado',
