@@ -9,7 +9,7 @@ focused on procurement analytics and supplier performance.
 Background: 2 years at Hennemann Supply Chain Consulting (Florianópolis, BR)
 + MITx MicroMasters in Supply Chain Management.
 
-Open to relocation across Europe 🌍
+Open to relocation across Brazil & Europe 🌍
 
 📎 [guilhermedoprado.com](https://guilhermedoprado.com)
 💼 [linkedin.com/in/guidoprado](https://linkedin.com/in/guidoprado)
