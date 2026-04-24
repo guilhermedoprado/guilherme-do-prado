@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ChevronDown, Download, Linkedin, MapPin } from 'lucide-react'
-import cvPdf from '../assets/images/CV_Guilherme_do_Prado.pdf'
+import cvPdf from '../assets/images/CV_-_Guilherme_do_Prado.pdf'
 import { HeroBackground } from './HeroBackground'
 import { site } from '../data/site'
 
