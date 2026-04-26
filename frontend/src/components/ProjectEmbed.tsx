@@ -1,12 +1,36 @@
 import { BarChart3 } from 'lucide-react'
 
-type Platform = 'powerbi' | 'qlik' | 'web'
+type EmbedConfig =
+  | { type: 'powerbi'; src: string }
+  | { type: 'qlik'; src: string }
+  | { type: 'web'; src: string }
+  | 'powerbi'
+  | 'qlik'
+  | 'web'
 
 type ProjectEmbedProps = {
-  platform: Platform
+  platform: EmbedConfig
 }
 
 export function ProjectEmbed({ platform }: ProjectEmbedProps) {
+  // Se for objeto com src, renderiza o iframe real
+  if (typeof platform === 'object' && 'src' in platform) {
+    return (
+      <div
+        className="relative mt-4 w-full overflow-hidden rounded-lg border border-border shadow-sm"
+        style={{ paddingTop: '62.25%' }}
+      >
+        <iframe
+          src={platform.src}
+          title="Dashboard embed"
+          className="absolute inset-0 h-full w-full border-0"
+          allowFullScreen
+        />
+      </div>
+    )
+  }
+
+  // Fallback: placeholder para projetos ainda não publicados
   const toolName =
     platform === 'powerbi'
       ? 'Power BI'
@@ -21,10 +45,7 @@ export function ProjectEmbed({ platform }: ProjectEmbedProps) {
     >
       <div className="flex flex-col items-center gap-4 text-center">
         <span className="relative flex items-center gap-2">
-          <span
-            className="size-2 animate-pulse rounded-full bg-blue-500"
-            aria-hidden
-          />
+          <span className="size-2 animate-pulse rounded-full bg-blue-500" aria-hidden />
           <span className="sr-only">Loading preview</span>
         </span>
         <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm">

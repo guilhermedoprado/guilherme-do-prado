@@ -149,11 +149,24 @@ export const site = {
       {
         id: 'industrial-procurement-dashboard',
         title: 'Industrial Procurement Dashboard',
-        status: 'in-development' as const,
+        status: 'live' as const,
         description:
-          'Spend analysis across mechanical, metal, and energy categories — supplier ranking, PO tracking, and cost deviation alerts.',
-        embed: 'powerbi' as const,
-        tags: ['Power BI', 'DAX', 'Procurement Analytics'],
+          'Spend analytics, supplier risk assessment and PO tracking for a simulated capital goods manufacturer — 3K POs, 40 suppliers, 7 categories, €77M spend across Jan 2023 to Dec 2024. Built to reflect real procurement workflows in industrial environments.',
+        callout:
+          'Dataset simulates a procurement underperformance scenario (OTIF 38.6%) to demonstrate risk identification and supplier analysis in a challenging operational context.',
+        features: [
+          { icon: '📦', label: '3,000 Purchase Orders' },
+          { icon: '🏭', label: '40 Active Suppliers' },
+          { icon: '📊', label: '7 Spend Categories' },
+          { icon: '💶', label: '€77M Total Spend' },
+          { icon: '⚠️', label: '104 Overdue Orders flagged' },
+          { icon: '📉', label: 'OTIF Rate 38.6% vs 85% target' },
+        ],
+        embed: {
+          type: 'powerbi' as const,
+          src: 'https://app.powerbi.com/view?r=eyJrIjoiMzYxODIyYTgtYzQwMC00OTVmLThmY2EtYjBjOTE2MDdkNWQzIiwidCI6ImZhNzk1MzFjLThjZTUtNGJkMy05N2VlLTI0NWU2ZWUyNjZiOCJ9',
+        },
+        tags: ['Power BI', 'DAX', 'Procurement Analytics', 'Supply Chain', 'KPI Tracking'],
       },
       {
         id: 'supplier-performance',
